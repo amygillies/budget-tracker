@@ -18,7 +18,10 @@ const AddExpenseForm = () => {
         dispatch({
             type: 'ADD_EXPENSE',
             payload: expense, 
-        }); 
+        });
+        
+        setName('');
+        setCost('');
     };
 
     return (
